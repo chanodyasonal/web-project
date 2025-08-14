@@ -10,13 +10,183 @@ body {
 
 .navbar-brand {
     font-weight: bold;
-    font-size: 1.4rem;
+    font-size: 1.8rem;
 }
 .play-overlay {
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.336);
     border-radius: 50%;
     padding: 10px 15px;
 }
 .video-thumbnail video {
     pointer-events: none;
+}
+/* Add to style.css */
+
+.footer-logo h4 {
+    font-family: serif; 
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+.footer-logo p {
+    font-size: 0.8rem;
+    margin-top: -5px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.social-icon-btn {
+    background-color: #be9b7b; /* A tan/beige color to match the image */
+    color: #fff;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
+}
+
+.social-icon-btn:hover {
+    background-color: #a3856b;
+}
+
+.footer-nav .list-inline-item a {
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+/* Add to style.css */
+.logo-footer {
+    max-width: 250px; /* Adjust as needed */
+    height: auto;
+}
+.btn-tan {
+    background-color: #be9b7b;
+    border-color: #be9b7b;
+    color: #fff;
+    font-weight: bold;
+}
+
+.btn-tan:hover {
+    background-color: #a3856b;
+    border-color: #a3856b;
+    color: #fff;
+}
+/* New Homepage Styles */
+
+/* Hero Section */
+.hero-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+/* Sub-titles */
+.text-muted-sub {
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #be9b7b !important;
+}
+
+/* Services Section */
+.services-section .service-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.services-section .service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-icon {
+    font-size: 2.5rem;
+    color: #be9b7b;
+}
+
+/* About Section */
+.about-section img {
+    max-width: 50%;
+}
+
+/* Featured Collection */
+.image-overlay-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.image-overlay-card img {
+    transition: transform 0.3s;
+}
+
+.image-overlay-card:hover img {
+    transform: scale(1.05);
+}
+
+.image-overlay-card .overlay-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    transform: translateY(100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-overlay-card:hover .overlay-content {
+    transform: translateY(0);
+}
+/* New Homepage Sections */
+
+.bg-light-brown {
+    background-color: #f7f3ed;
+}
+
+.testimonials-section .carousel-item {
+    padding: 2rem 0;
+}
+
+.cta-section {
+    background-size: cover !important;
+    background-position: center !important;
+}
+
+.blog-section img {
+    height: auto;
+    object-fit: cover;
+}
+/* Custom footer color */
+.footer-custom {
+    background-color: #B2BEB5;
+    color: #333; /* Dark text for better contrast */
+}
+/* Floating WhatsApp button */
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+}
+
+.whatsapp-float .my-float {
+    margin-top: 16px;
+}
+/* New background color for the featured collection section */
+.bg-tan {
+    background-color: hsl(20, 23%, 97%) !important;
+}
+
+/* Ensure text on this background is readable */
+.bg-tan p,
+.bg-tan h2 {
+    color: oklch(0% 0 0) !important;
 }
