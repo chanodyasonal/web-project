@@ -2,7 +2,7 @@
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Set the recipient email address
-    $to_email = "infor@ambientportraiture.uk";
+    $to_email = "ambientportaiture.co@gmail.com";
 
     // Collect data from the form
     $name = strip_tags(trim($_POST["name"]));
