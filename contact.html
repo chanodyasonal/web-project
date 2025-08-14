@@ -7,10 +7,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
 
-    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container">
             <a class="navbar-brand" href="index.html">Ambient Portraiture</a>
@@ -18,44 +18,112 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
+                <ul class="navbar-nav ms-auto align-items-center">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Our Services</a></li>
                     <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-                    <li class="nav-item"><a class="nav-link" href="services.html">Our Service</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-tan rounded-pill px-4 py-2" href="contact.html">GET IN TOUCH</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Contact Form -->
-    <section class="py-5">
+    <section class="py-5 bg-light-brown">
         <div class="container" data-aos="fade-up">
-            <h2 class="text-center mb-4">Get in Touch</h2>
-            <form>
-                <div class="mb-3">
-                    <label class="form-label">Full Name</label>
-                    <input type="text" class="form-control" placeholder="Enter your name">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="text-muted-sub">REACH US</p>
+                    <h2 class="display-5 fw-bold mb-4">CONTACT US</h2>
+                    <p class="lead">Give us a call or send us a message to learn more about how we can help you.</p>
+                    <form action="send_email.php" method="post">
+                        <div class="row g-3 mb-3">
+                            <div class="col-md-6">
+                                <input type="text" class="form-control rounded-pill" name="name" placeholder="Name" required>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="email" class="form-control rounded-pill" name="email" placeholder="Email" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control rounded-pill" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control rounded" rows="5" name="message" placeholder="Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-tan rounded-pill w-100">SEND MESSAGE</button>
+                    </form>
                 </div>
-                <div class="mb-3">
-                    <label class="form-label">Email Address</label>
-                    <input type="email" class="form-control" placeholder="Enter your email">
+                
+                <div class="col-md-6 ps-md-5 mt-5 mt-md-0">
+                    <p class="text-muted-sub">EMAIL:</p>
+                    <p class="fw-bold"><a href="mailto:ambientportaiture.co@gmail.com" class="text-dark text-decoration-none">ambientportaiture.co@gmail.com</a></p>
+
+                    <p class="text-muted-sub mt-4">HOT LINE:</p>
+                    <p class="fw-bold"><a href="tel:+447576969143" class="text-dark text-decoration-none">+44 7576 969143</a></p>
+                    
+                    <p class="text-muted-sub mt-4">LOCATION:</p>
+                    <p class="fw-bold">United Kingdom</p>
+                    
+                    <p class="text-muted-sub mt-4">FOLLOW US:</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/ambient_portraiture.uk/" class="social-icon-btn d-inline-block p-2 rounded-1 me-2"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/Ambient.Portraiture.co" class="social-icon-btn d-inline-block p-2 rounded-1 me-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon-btn d-inline-block p-2 rounded-1 me-2"><i class="fab fa-tiktok"></i></a>
+                        <a href="#" class="social-icon-btn d-inline-block p-2 rounded-1"><i class="fab fa-youtube"></i></a>
+                    </div>
                 </div>
-                <div class="mb-3">
-                    <label class="form-label">Message</label>
-                    <textarea class="form-control" rows="5" placeholder="Type your message"></textarea>
-                </div>
-                <button type="submit" class="btn btn-dark">Send Message</button>
-            </form>
+            </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-4">
-        <p>&copy; 2025 Ambient Portraiture. All rights reserved.</p>
-        <a href="contact.html" class="btn btn-light">Get in Touch</a>
+    <footer class="bg-dark text-white pt-5 pb-3">
+        <div class="container">
+            <div class="row text-center mb-4">
+                <div class="col-md-4">
+                    <h5 class="fw-bold">Mobile</h5>
+                    <p><a href="tel:+947576969143" class="text-white text-decoration-none">7576 969143</a></p>
+                </div>
+                <div class="col-md-4">
+                    <div class="footer-logo mb-3">
+                        <img src="assets/img/logo/LOGO 1.png" alt="Ambient Portraiture Logo" class="img-fluid logo-footer">
+                    </div>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/ambient_portraiture.uk/" class="social-icon-btn d-inline-block p-2 rounded-1 me-2"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/Ambient.Portraiture.co" class="social-icon-btn d-inline-block p-2 rounded-1 me-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon-btn d-inline-block p-2 rounded-1 me-2"><i class="fab fa-tiktok"></i></a>
+                        <a href="#" class="social-icon-btn d-inline-block p-2 rounded-1"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="fw-bold">Email</h5>
+                    <p><a href="mailto:ambientportaiture.co@gmail.com" class="text-white text-decoration-none">ambientportaiture.co@gmail.com</a></p>
+                </div>
+            </div>
+            <hr class="text-white-50">
+            <div class="row text-center mt-3">
+                <div class="col-12">
+                    <ul class="list-inline footer-nav">
+                        <li class="list-inline-item"><a href="index.html" class="text-white text-decoration-none mx-2">HOME</a></li>
+                        <li class="list-inline-item"><a href="about.html" class="text-white text-decoration-none mx-2">ABOUT</a></li>
+                        <li class="list-inline-item"><a href="services.html" class="text-white text-decoration-none mx-2">OUR SERVICES</a></li>
+                        <li class="list-inline-item"><a href="gallery.html" class="text-white text-decoration-none mx-2">Gallery</a></li>
+                        <li class="list-inline-item"><a href="contact.html" class="text-white text-decoration-none mx-2">CONTACT US</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="text-center py-4">
+            <p>&copy; 2025 Ambient Portraiture. All rights reserved.</p>
+        </div>
     </footer>
+
+    <a href="https://wa.me/947576969143" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp my-float"></i>
+    </a>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
