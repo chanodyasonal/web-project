@@ -190,3 +190,36 @@ body {
 .bg-tan h2 {
     color: oklch(0% 0 0) !important;
 }
+.about-img {
+    max-width: 400px;
+    height: auto; /* Ensures the aspect ratio is maintained */
+}
+/* About page image hover effect */
+.image-hover-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.image-hover-container img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-hover-container:hover img {
+    transform: scale(1.05);
+}
+
+.image-hover-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.image-hover-container:hover::after {
+    background-color: rgba(0, 0, 0, 0.2);
+}
